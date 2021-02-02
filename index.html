@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="royal.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script type="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+              function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("main").style.marginLeft = "0";
+                  document.body.style.backgroundColor = "white";
+                }
+                
+        </script>
+      </head>
+    <body>
+      <!---------------------------topNavBar--------------------------->
+        <div class="topnav">
+            <div class="phone_num">
+                <a >+917795687594</a>
+                <a>/</a>
+                <a>+919019595595</a>
+                <a><img src="img/telephone.png"></a>
+            </div>
+            <div class="topMenuBar">
+           
+                <a class="menuBarIcon" onclick="openNav()" href="#"><i class="fas fa-bars" style="font-size: 25px;"></i></a>
+                <a class="royalPhoneLogo " style=" padding: 0px ;"><img src="img/royalPhoneLogo.PNG"></a>
+                <a class="phoneScreen" style="margin: auto; padding: 0px ;"><img src="img/logo.PNG"></a>
+                <a class="phoneScreen" href="#tarrif">Tariff</a>
+                <a class="phoneScreen" href="#career">Career</a>
+                <a class="locationPhone" href="#Location"><i class="fas fa-map-marker-alt" style="font-size: 20px; color: rgb(255, 196, 0) ; margin-right: 20px;"></i>
+                  Location<i class="fa fa-chevron-down" style="margin-left:25px ;"></i></a>
+              <div class="dropdown">
+                <button class="dropbtn phoneScreen">Partner with us
+                <i class="fa fa-chevron-down" style="margin-left:10px ;"></i>
+                </button>
+                <div class="dropdown-content phoneScreen">
+                    <a href="#">Earn with us</a>
+                    <a href="#">Own a franchise</a>
+                </div>
+              </div>
+              <a class="phoneScreen" href="#search"><i class="fa fa-search" style="font-size: 15px; margin-right: 10px;"></i>
+                Search</a>
+              <div class="rightSideButtons">
+                <a class="location phoneScreen" \href="#Location"><i class="fas fa-map-marker-alt" style="font-size: 20px; color: rgb(255, 196, 0) ; margin-right: 20px;"></i>
+                    Location<i class="fa fa-chevron-down" style="margin-left:25px ;"></i></a>
+                    <a class="logIn phoneScreen" href="#logIn">Log In</a>
+                    <a class="signUp phoneScreen" href="#signUp">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <!--------------------- sidenav --------------------------->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Tariff</a>
+            <a href="#">Madrai Kanyakumari ride</a>
+            <a href="#">Partner with</a>
+            <a href="#">Blog</a>
+            <a href="#">Indian Bike Routes</a>
+            <a href="#">About us</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Bike Tour</a>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Reach us</a>
+        </div>
+        <span onclick="openNav()">open</span>
+        <div id="main">
+          ...
+        </div>
+        <!--------------------------Booking Container--------------------------------->
+        <div class="phoneBackgrond">
+          <img src="img/Home_bakground.jpg" style="width: 100%; height: 100%; z-index: -15;">
+        </div>
+        <div class="homeImage">
+            <div class="cont">
+              <form action="/action_page.php" class="container">
+                <p style=" font-weight:bold; font-size: 25px; color: rgb(0, 0, 0); padding: 10px 0px 10px 0px;margin: 0;">Search your next ride<p>
+                <table style="width:100%">
+                  <tr>
+                    <td colspan="2"><label for="pickUp"><b>Pickup</b></label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="date" name="pickup" id="pickup"></td>
+                    <td><select>
+                      <option value="09:30 AM">09:30 AM</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="10:30 AM">10:30 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="11:30 AM">11:30 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="1:00 PM">01:00 PM</option>
+                      <option value="1:30 PM">01:30 PM</option>
+                      <option value="2:00 PM">02:00 PM</option>
+                      <option value="2:30 PM">02:30 PM</option>
+                      <option value="3:00 PM">03:00 PM</option>
+                      <option value="3:30 PM">03:30 PM</option>
+                      <option value="04:00 PM">04:00 PM</option>
+                      <option value="4:30 PM">04:30 PM</option>
+                      <option value="5:00 PM">05:00 PM</option>
+                      <option value="5:30 PM">05:30 PM</option>
+                      <option value="6:00 PM">06:00 PM</option>
+                      <option value="6:30 PM">06:30 PM</option>
+                      <option value="7:00 PM">07:00 PM</option>
+                      <option value="7:30 PM">07:30 PM</option>
+                      <option value="8:00 PM">08:00 PM</option>
+                      <option value="8:30 PM">08:30 PM</option>
+                      <option value="9:00 PM">09:00 PM</option>
+                      <option value="9:30 PM">09:30 PM</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><label ><b>Dropoff</b></label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="date" name="Dropoff" id="Dropoff"></td>
+                    <td><select>
+                      <option value="9:30 AM">09:30 PM</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="10:30 AM">10:30 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="11:30 AM">11:30 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="1:00 PM">01:00 PM</option>
+                      <option value="1:30 PM">01:30 PM</option>
+                      <option value="2:00 PM">02:00 PM</option>
+                      <option value="2:30 PM">02:30 PM</option>
+                      <option value="3:00 PM">03:00 PM</option>
+                      <option value="3:30 PM">03:30 PM</option>
+                      <option value="04:00 PM">04:00 PM</option>
+                      <option value="4:30 PM">04:30 PM</option>
+                      <option value="5:00 PM">05:00 PM</option>
+                      <option value="5:30 PM">05:30 PM</option>
+                      <option value="6:00 PM">06:00 PM</option>
+                      <option value="6:30 PM">06:30 PM</option>
+                      <option value="7:00 PM">07:00 PM</option>
+                      <option value="7:30 PM">07:30 PM</option>
+                      <option value="8:00 PM">08:00 PM</option>
+                      <option value="8:30 PM">08:30 PM</option>
+                      <option value="9:00 PM">09:00 PM</option>
+                      <option value="9:30 PM">09:30 PM</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td></td></tr>
+                  <tr>
+                    <td colspan="2"><button type="submit" class="SearchButton">Search</button></td>
+                  </tr>
+                </table>
+                
+              </form>
+            </div>
+        </div>
+        <!-------------------------------sanitize---------------------------->
+        <div style="text-align: center;" class="sanitize">
+          <span ><img id="sanitizeImage" src="img/Sanitize.png"></span>
+            <div style="text-align: center;">
+              <span  class="sanitizeService">
+                <img id="handImg"src="img/hand-shake.png">
+              Vehicle Insurance <img  src="img/tools.png">
+              24/7 Roadside Assistance <img src="img/tools.png">
+              Bike Maintenance</span>
+            </div>
+         <!--------------------------------slide--------------------------->  
+        </div>
+        <div class="slideshow-container">
+          <div class="text">WE BILIEVE IN QUALITY</div>
+
+          <div class="mySlides fade">
+            <img src="img/slide1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/slide2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/slide3.png" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,714 @@
+        body
+        {
+            background-color: #F5F5F5;
+            color: #555;
+            font-family:Arial, Helvetica, sans-serif;
+            outline: none;
+            padding: 0;
+            margin: 0;
+        }
+        *{
+            font-family:'Trebuchet MS' ;
+            font-size: 12px;
+            color: #696969;
+         }
+/*---------------------------------top nav---------------------*/
+         .topnav
+        {
+            margin: 0 auto 0;
+            padding-top: 0px;
+            background-color: rgb(255, 255, 255);
+            overflow: visible;
+            margin-top: 0%;
+            height: max-content;
+            width:100%;
+            position: fixed;
+            box-shadow: 0px 0px 15px 0px rgb(143, 143, 143); 
+            z-index: 1; 
+          }
+            
+        .topnav a
+         {
+            float: left;
+            text-align: center;
+            text-decoration: none;
+            transition-duration: 0.6s;
+         }
+         .topMenuBar
+         {
+            align-items: center;
+            padding: 5px 5px 5px 5px;
+            height: max-content;
+            width: 100%;
+        }
+
+        .phone_num
+        {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+            height: max-content;
+            align-items: center;
+            font-size: 14px;
+            padding-right: 8px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 2px;
+        }
+        
+        .phone_num img
+        {
+            width:15px;
+            height:15px;
+            padding-right: 2px;
+            float:right;
+        }
+        .phone_num a
+        {
+            padding: 0px 2px;
+            float: right;
+            margin-left: 2px;
+            text-align: center;
+
+        }
+        .phone_num a:hover
+        {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition-delay: 1s;
+            -webkit-transition-delay: 1s;
+        }
+        .rightSideButtons
+        {
+             float: right;
+        }
+        .locationPhone
+        {
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border: 1px solid  rgb(255, 220, 103);
+            border-radius: 4px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 7px 15px;
+            margin-left: 58x;
+            margin-bottom: 5px;
+            text-decoration: none;
+            transition-duration: 00.6s;
+            display: inline-block;
+            position: relative;
+        }
+ /*----------------sidenav------------------------------------------*/
+        .menuBarIcon
+        {
+            margin:3px 2px 3px 2px;
+            padding: 0px;
+            position: relative;
+        }
+        .sidenav
+        {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            background-color: rgb(235, 235, 235);
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+        .sidenav a
+        {
+            padding: 10px 8px 10px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover
+        {
+            background-color: rgb(187, 187, 187);
+            color: #000000;
+        }
+        .sidenav .closebtn
+        {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .sidenav .closebtn:hover
+        {
+            background-color: rgb(235, 235, 235);
+        }
+        .phoneScreen
+        {
+            display: none;
+        }
+        .rightSideButtons
+        {
+            display:none;
+        }
+        .royalPhoneLogo
+        {
+            position: relative;
+            display: block;
+        }
+        .container
+        {
+            font-size: 10px;
+            position: relative;
+            left: 0;
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            background-color: white;
+            box-shadow:  0px 0px 15px 0px rgb(56, 56, 56) ;
+            display: block;
+        }
+        input[type=date], input[type=date]
+        {
+            border: 1px solid rgb(187, 187, 187);
+            background: #ffffff;
+            border-radius: 4px;
+            width: 150px;
+            margin: 0;
+            height: 30px;
+            opacity: 0.5;
+        }
+        select
+        {
+            font-size: 8px;
+            margin: 0;
+            width: 140px;
+            height: 30px;
+            border: 1px solid rgb(187, 187, 187);
+            background: #ffffff;
+            border-radius: 4px;
+            opacity: 0.5;
+        }
+        .Sanitize.pngSanitize.pngoption:hover
+        {
+            opacity: 1;
+        }
+        .SearchButton
+        {
+            background-color: rgb(255, 211, 67);
+            color: rgb(0, 0, 0);
+            padding: 10px 10px;
+            border: none;
+            width: 100%;margin-top: 20px;
+            font-weight: bold;
+            height: 50px;
+            opacity: 0.9;
+            border-radius: 8px;
+            margin: 30px 0px 10px 0px;
+        }
+        .SearchButton:hover
+        {
+            opacity: 1;
+        }
+        [type="date"]
+        {
+            background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+        }
+        [type="date"]::-webkit-inner-spin-button
+        {
+            display: none;
+        }
+        [type="date"]::-webkit-calendar-picker-indicator
+        {
+            opacity: 0;
+        }
+        label
+        {
+            margin: 10px 0px 10px 0px;
+            display: block;
+        }
+        table td tr
+        {
+            width: 100%;
+        }
+        @media screen and (max-height: 450px)
+        {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .sanitize
+        {
+            background-color: rgb(255, 255, 255);
+            padding: 2px 0px 2px 0px;
+            font-size: 10px;
+            position: relative;
+        }
+        #sanitizeImage
+        {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 100%;
+        }
+        .sanitize img
+        {
+            margin-left: 2px;
+            margin-right: 0px;
+            width: 15px; height: 15px;
+        }
+        .sanitizeService
+        {
+            width: 100%;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        #handImg
+        {
+            width:18px;
+            height: 18px;
+        }
+        .phoneBackgrond
+        {
+            display: block;
+        }
+        .slideshow-container
+        {
+            width: 100%;
+            position: relative;
+            margin: 0px;
+            padding: 20px 0px 0px 10dp;
+        }
+        .mySlides
+        {
+            display: none;
+        }
+        .prev, .next
+        {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next
+        {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            color: #ffe600;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom:  8px;
+            width: 100%;
+            text-align: center;
+        }
+        .dot
+        {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover
+        {
+            background-color: #717171;
+        }
+        .fade
+        {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade
+        {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+          
+        @keyframes fade
+        {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+
+/*---------------------------------------------*/
+@media only screen and (min-width: 768px)
+{
+        
+    .phoneBackgrond
+    {
+        display: none;
+    }
+    .container
+    {
+        font-size: 10px;
+        position: absolute;
+        left: 0;
+        margin-top: 130px;
+        margin-left: 200px;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow:  0px 0px 15px 0px rgb(56, 56, 56) ;
+        display: block;
+    }
+    input
+    {
+        margin: 0;
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        background-color: rgb(241, 241, 241);
+        padding: 3px 5px;
+        box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+        width: 180px;
+        opacity: 0.5;
+    }
+    select
+    {
+        font-size: 8px;
+        margin: 0;
+        width: 180px;
+        height: 30px;
+        border: 1px solid rgb(187, 187, 187);
+        background: #ffffff;
+        border-radius: 4px;
+        opacity: 0.5;
+    }
+    .homeImage
+    {
+        background-image: url("img/Home_bakground.jpg");
+        overflow:visible;
+        min-height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: block;
+    }
+    .rightSideButtons
+    {
+        display: block;
+    }
+    .royalPhoneLogo
+    {
+        display: none;
+    }
+    body
+    {
+        background-color: #F5F5F5;
+        color: #555;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+        padding: 0;
+        margin: 0;
+    }
+    *{
+        font-family:'Trebuchet MS' ;
+        font-size: 15px;
+        color: #696969;
+    }
+
+
+    .topnav
+    {
+        margin: 0 auto 0;
+        padding-top: 0px;
+        background-color: rgb(255, 255, 255);
+        overflow: visible;
+        margin-top: 0%;
+        height: max-content;
+        width:100%;
+        position: fixed;
+        z-index: 1;
+        box-shadow: 0px 0px 15px 0px rgb(143, 143, 143);  
+    }
+    .topnav a
+    {
+       float: left;
+       text-align: center;
+       padding: 18px 16px 18px 16px;
+       text-decoration: none;
+       transition-duration: 0.6s;
+       margin-left: 30px;
+    }
+    .topnav a:hover
+    {
+        background-color: rgb(255, 220, 103);
+        transition-duration: 0.2s;
+    }
+    .topnav img
+    {
+        float: left;
+        color: white;
+    }
+    .phone_num
+    {
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        height: max-content;
+        align-items: center;
+        font-size: 14px;
+        padding-right: 8px;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    .phone_num img
+    {
+        width:15px;
+        height:15px;
+        padding-right: 2px;
+        float:right;
+    }
+    .phone_num a
+    {
+        padding: 0px 2px;
+        float: right;
+        margin-left: 2px;
+        text-align: center;
+    }
+    .phone_num a:hover
+    {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    }
+    .topMenuBar
+    {
+        padding: 10px 5px 10px 5px;
+    }
+    a
+    {
+        outline: none !important;
+    }
+    .locationPhone
+    {
+        display: none;
+    }
+    .dropdown
+    {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown .dropbtn
+    {
+        border: none;
+        outline: none;
+        padding: 18px 16px;
+        background-color: inherit;
+        font-family: inherit; 
+        margin-left: 30px;
+    }
+    .dropdown:hover
+    {
+        background-color: rgb(255, 220, 103);
+    }
+    .dropdown-content
+    {
+        display: none;
+        position: absolute;
+        background-color: #ffffffe8;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        width: 192px;
+    }
+    .dropdown-content a
+    {
+        display: none;
+        float: none;
+        padding: 18px 16px;
+        text-decoration: none;
+        display: block;
+        margin-left: 0px;
+        text-align: left;
+    }
+    .dropdown-content a:hover
+    {
+        background-color: rgb(255, 220, 103);
+    }
+    .dropdown:hover .dropdown-content
+    {
+        display: block;
+    }
+    .home
+    {
+        z-index: 0;
+        overflow: visible;
+    }
+    .locationPhone
+    {
+        display:none;
+    }
+    .phoneScreen
+    {
+        display: block;
+    }
+    .dropdown-content
+    {
+        display: none;
+    }
+    .rightSideButtons
+    {
+        float: right;
+    }
+    .rightSideButtons .signUp
+    {
+        background-color: rgb(255, 220, 103);
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+    .rightSideButtons .logIn
+    {
+        background-color:	#ffffff;
+        border-radius: 4px;
+        padding: 10px 15px;
+        position: relative;
+        margin: auto;
+    }
+    .rightSideButtons .logIn:hover
+    {
+        background-color: 	#d3d3d3;
+        color: #000000;
+
+    }
+    .rightSideButtons .location
+    {
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border: 1px solid  rgb(255, 220, 103);
+        border-radius: 8px;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 00.6s;
+        display: inline-block;
+        right: 100px;
+        position: relative;
+    }
+    .topnav .menuBarIcon
+    {
+        margin:15px 2px 10px 2px;
+        padding: 0px;
+        position: relative;
+    }
+    .topnav  .menuBarIcon:hover
+    {
+        background-color: #e0e0e0;
+    }
+
+    .sidenav
+    {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(235, 235, 235);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .sidenav a
+    {
+        padding: 10px 8px 10px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover
+    {
+        background-color: rgb(187, 187, 187);
+        color: #000000;
+    }
+    .sidenav .closebtn
+    {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .sidenav .closebtn:hover
+    {
+        background-color: rgb(235, 235, 235);
+    }
+    #main
+    {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+    @media screen and (max-height: 450px)
+    {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .sanitize
+    {
+        background-color: rgb(255, 255, 255);
+        padding: 20px 0px 20px 0px;
+        position: relative;
+    }
+    #sanitizeImage
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .sanitize img
+    {
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 2%; height: 2%;
+    }
+    .sanitizeService
+    {
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #handImg
+    {
+        width:3.5%;
+         height: 3.5%;
+    }
+    .ImageSlides
+    {
+        display: block;
+    }
+    * {box-sizing:border-box}      
+}
+
+            
